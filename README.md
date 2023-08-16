@@ -9,6 +9,5 @@ The program runs on python, the modules imported are the string and random modul
 # Usage instructions
 The program asks the user to input a letter. Type in a letter and press enter. The program will then tell the user whether or not the letter is in the word.
 
-# File structure of the project
-
 # Licencing information
+MIT licence
