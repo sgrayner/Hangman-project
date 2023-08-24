@@ -9,7 +9,9 @@ The program runs on python, the modules imported are the string and random modul
 
 # Usage instructions
 The program asks the user to input a letter. Type in a letter and press enter. After each input, the computer tells the user whether or not the letter is in the word. The user starts with 12 lives. If the letter is not in the word, the user will lose a life and the computer will tell the user how many lives they have remaining. If the letter is in the word, the computer will show how many missing spaces are left in the word and where the locations of the correctly guessed letters are.
-![Choosing a correct letter](https://github.com/[sgrayner]/[Hangman-project]/blob/[master]/Correct_letter.png?raw=true)
+<img width="254" alt="Correct_letter" src="https://github.com/sgrayner/Hangman-project/assets/29332415/81cdb7f9-1e53-4ff7-9656-6665e740bc9f">
+<img width="291" alt="Incorrect_letter" src="https://github.com/sgrayner/Hangman-project/assets/29332415/ebba97c2-6b0e-42b8-889e-ff41bb1baab0">
+<img width="167" alt="already_tried_letter" src="https://github.com/sgrayner/Hangman-project/assets/29332415/e764f014-3c4d-4bc8-a200-84865bf9dcbe">
 
 # Licencing information
 MIT licence
