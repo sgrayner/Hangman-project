@@ -1,17 +1,13 @@
 import string
 import random
-import math
-import numpy as np
-import matplotlib.patches as patches
-import matplotlib.pyplot as plt
 
 def play_game():
+    '''Calling this function starts the game. It opens a list of words, then instantiates a game of Hangman with 12 lives.'''
     word_list = open('nounlist.csv', 'r')
     word_list = word_list.read().split('\n')
-    num_lives = 20
+    num_lives = 12
     game = Hangman(word_list, num_lives)
     while True:
-        #print(num_lives)
         if game.num_lives == 0:
             print('You lost!')
             break
@@ -71,17 +67,4 @@ class Hangman:
         print(self.word_guessed)
 
 
-    def picture(self):
-        fig=plt.figure()
-        ax=fig.add_subplot(1,1,1)
-        picture_parts = [plt.plot([-7,-1],[-8,-8], color="black"), plt.plot([-4,-4],[-8,8], color="black"), plt.plot([-6,-4],[-8,-6], color="black"), plt.plot([-2,-4],[-8,-6], color="black"),
-                        plt.plot([-4,0],[8,8], color="black"), plt.plot([0,0],[8,4], color="black"), plt.Circle((0,3),1,color="black",fill=False), ax.add_patch(plt.Circle((0,3),1,color="black",fill=False)),
-                        plt.plot([0,0],[2,-1], color="black"), plt.plot([0,-1],[2,0], color="black"), plt.plot([0,1],[2,0], color="black"), plt.plot([0,-1],[-1,-4.5], color="black"), 
-                        plt.plot([0,1],[-1,-4.5], color="black")]
-        picture = []
-        for index in range(picture_parts):
-            picture.append(picture_parts[0, 12 - self.num_lives])
-        plt.axis([-10, 10, -10, 10])
-        plt.show()
-
-play_game()
+play_game() # This line is run to start the game.
